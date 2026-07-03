@@ -4,7 +4,7 @@ A Claude skill that reviews an AI agent for production readiness.
 
 A demo that works in a keynote is not an agent that works at 2am. This skill runs the review I use to tell the difference. It scores an agent across evaluation, cost, observability, guardrails, human oversight, reliability, and governance, and returns the gaps that stand between a prototype and a system you can operate.
 
-It is the executable version of the checklist at [hamidettefagh.com/notes/agent-production-readiness](https://hamidettefagh.com/notes/agent-production-readiness).
+It is the executable version of the checklist at [hamidettefagh.com/agent-production-readiness](https://hamidettefagh.com/agent-production-readiness).
 
 ## Install
 
