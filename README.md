@@ -6,6 +6,10 @@ A demo that works in a keynote is not an agent that works at 2am. This skill run
 
 It is the executable version of the checklist at [hamidettefagh.com/agent-production-readiness](https://hamidettefagh.com/agent-production-readiness).
 
+## The two-gate method
+
+This is the ship-time gate: whether an agent is ready. Its sibling, [agent-or-workflow](https://github.com/hamidettefagh/agent-or-workflow), is the design-time gate: what to build in the first place. One decides the shape; the other decides whether the shape is safe to run. Together they cover an agent from the whiteboard to the on-call rotation.
+
 ## Install
 
 This follows the open [Agent Skills](https://code.claude.com/docs/en/skills) format, so it works anywhere skills are supported. To use it in Claude Code, put this directory in your skills folder:
@@ -47,4 +51,4 @@ This skill encodes that as a review you can run. The score is a prompt for a con
 
 ---
 
-Hamid Ettefagh — [hamidettefagh.com](https://hamidettefagh.com)
+Hamid Ettefagh, [hamidettefagh.com](https://hamidettefagh.com)

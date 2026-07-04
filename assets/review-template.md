@@ -2,7 +2,7 @@
 
 ## Summary
 
-{count}/28 — {band}. Strongest: {dimension}. Biggest gap: {dimension}.
+{count}/28: {band}. Strongest: {dimension}. Biggest gap: {dimension}.
 
 One or two sentences on the headline: is this ready, nearly ready, or a demo, and what is the single thing standing in the way.
 
@@ -22,9 +22,9 @@ One or two sentences on the headline: is this ready, nearly ready, or a demo, an
 
 Ordered by risk to this specific agent, not by how easy they are to fix.
 
-1. **{gap}** ({dimension}) — {why it matters for this agent}. Smallest fix: {the least work that would close it}.
-2. **{gap}** ({dimension}) — {why it matters}. Smallest fix: {...}.
-3. **{gap}** ({dimension}) — {why it matters}. Smallest fix: {...}.
+1. **{gap}** ({dimension}): {why it matters for this agent}. Smallest fix: {the least work that would close it}.
+2. **{gap}** ({dimension}): {why it matters}. Smallest fix: {...}.
+3. **{gap}** ({dimension}): {why it matters}. Smallest fix: {...}.
 
 ## What is already solid
 
