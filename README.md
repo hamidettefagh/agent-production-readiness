@@ -8,7 +8,7 @@ It is the executable version of the checklist at [hamidettefagh.com/agent-produc
 
 ## The two-gate method
 
-This is the ship-time gate: whether an agent is ready. Its sibling, [agent-or-workflow](https://github.com/hamidettefagh/agent-or-workflow), is the design-time gate: what to build in the first place. One decides the shape; the other decides whether the shape is safe to run. Together they cover an agent from the whiteboard to the on-call rotation. The write-up behind both gates is at [hamidettefagh.com/two-gates](https://hamidettefagh.com/two-gates).
+This is the ship-time gate: whether an agent is ready. Its sibling, [agent-or-workflow](https://github.com/hamidettefagh/agent-or-workflow), is the design-time gate: what to build in the first place. One decides the shape; the other decides whether the shape is safe to run. Together they cover an agent from the whiteboard to the on-call rotation, and [incident-to-eval](https://github.com/hamidettefagh/incident-to-eval) closes the loop by turning what still breaks into regression tests. The write-up behind both gates is at [hamidettefagh.com/two-gates](https://hamidettefagh.com/two-gates). All three install together as the [two-gates plugin](https://github.com/hamidettefagh/two-gates).
 
 ## Install
 
