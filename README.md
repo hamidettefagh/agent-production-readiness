@@ -8,7 +8,7 @@ It is the executable version of the checklist at [hamidettefagh.com/agent-produc
 
 ## The two-gate method
 
-This is the ship-time gate: whether an agent is ready. Its sibling, [agent-or-workflow](https://github.com/hamidettefagh/agent-or-workflow), is the design-time gate: what to build in the first place. One decides the shape; the other decides whether the shape is safe to run. Together they cover an agent from the whiteboard to the on-call rotation.
+This is the ship-time gate: whether an agent is ready. Its sibling, [agent-or-workflow](https://github.com/hamidettefagh/agent-or-workflow), is the design-time gate: what to build in the first place. One decides the shape; the other decides whether the shape is safe to run. Together they cover an agent from the whiteboard to the on-call rotation. The write-up behind both gates is at [hamidettefagh.com/two-gates](https://hamidettefagh.com/two-gates).
 
 ## Install
 
@@ -27,7 +27,7 @@ Ask Claude to review an agent, and point it at the design, prompt, tools, or dep
 
 > Review this agent for production readiness.
 
-The skill runs a four-phase review: understand the agent, assess each dimension against the evidence, score it out of 28, and return the gaps in priority order. It leads with the gaps, not the score.
+The skill runs a four-phase review: understand the agent, assess each dimension against the evidence, score it out of 28, and return the gaps in priority order. It leads with the gaps, not the score. See a filled example in [`assets/example-review.md`](assets/example-review.md).
 
 ## What it checks
 

@@ -8,6 +8,8 @@ license: MIT
 
 A demo that works in a keynote is not an agent that works at 2am. This skill runs the review that tells the difference. It scores an agent across seven dimensions and returns the gaps that stand between a promising prototype and a dependable production system.
 
+It is the ship-time gate. Its sibling, the [agent-or-workflow](https://github.com/hamidettefagh/agent-or-workflow) skill, is the design-time gate. This one decides whether an agent is ready to run; that one decides what to build in the first place.
+
 ## When to run this
 
 Run this when the user is:
@@ -54,7 +56,7 @@ The score is the start of the conversation, not the end. Return a short, priorit
 
 ## Output
 
-Use the format in `assets/review-template.md`. Lead with the gaps, not the score.
+Use the format in `assets/review-template.md`. Lead with the gaps, not the score. A filled example is in `assets/example-review.md`.
 
 ## Principles
 
