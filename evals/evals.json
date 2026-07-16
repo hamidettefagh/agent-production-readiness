@@ -1,0 +1,35 @@
+{
+  "skill_name": "agent-production-readiness",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Review this agent for production readiness. It is a customer support agent we want to launch next week: prompt lives in a config file someone edits by hand, no eval set yet, it can issue refunds up to $200 autonomously, and we have basic request logging.",
+      "expected_output": "A four-phase review that scores all seven dimensions out of 28 with evidence, leads with the prioritized gaps (autonomous refunds with no eval set and no confirmation gate should rank at or near the top), and treats unevidenced claims as not met.",
+      "assertions": [
+        "All seven dimensions are scored and a total out of 28 is reported",
+        "The output leads with the gaps in priority order, not with the score",
+        "The autonomous refund path is flagged under guardrails or human oversight",
+        "Claims without evidence are treated as not met and said so",
+        "Each gap names the smallest change that would close it"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "is my little demo bot ready to ship? it's a weekend prototype, I'm never putting it in front of users, just curious",
+      "expected_output": "The skill declines to run the full review against a throwaway prototype per its own scope rule, or asks whether it will ever reach production before proceeding.",
+      "assertions": [
+        "The full 28-check review is not run unconditionally",
+        "The response references the prototype-versus-production distinction or asks about production intent"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "We think our order-tracking agent is solid. Evals exist, we log everything, cost is fine. Score us.",
+      "expected_output": "The review asks for or inspects actual evidence (the eval set, the logs, the cost tracking) rather than accepting the claims, and scores strictly where evidence is not shown.",
+      "assertions": [
+        "The review does not award points for claimed-but-unshown evals or logging",
+        "The response asks for the artifacts or states that unevidenced items score as not met"
+      ]
+    }
+  ]
+}
